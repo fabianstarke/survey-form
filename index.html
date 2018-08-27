@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="main">
+  <div id="second">
+    <div id="button">
+     <button class="btn-background">
+       <i class="material-icons md{ color: rgba(0, 0, 0, 0.26); }">close
+       </i>
+     </button>
+   </div>
+    <h1 id="title">Project survey form</h1>
+   <p id="description">In order to be contacted, please provide some additionnal information including the best conveniant time to reach you.
+   </p>
+    <form id="survey-form">
+      <div class="subtitle">
+          <i class="material-icons">
+          account_circle
+        </i>
+         <h4>Personal information<h4>
+      </div>
+      <div class="row">
+       <div class="label" >
+          <label id="name-label" for="name">Last Name: </label>
+        </div>
+       <div class="rightSide">
+        <input class="input-field" type="text" name="name" id="name" placeholder="Last Name" required/>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="label">
+          <label id="first-name" for="first-name">First Name: </label>
+        </div>
+       <div class="rightSide">
+        <input class="input-field" type="text" name="first-name" id="first-name" placeholder="First Name" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="email-label" for="name">E-mail adress</label>
+        </div>
+        <div class="rightSide">
+        <input class="input-field" type="email" name="email" id="email" placeholder="Email Adress" required "Email Adress"/>
+      </div>
+      </div> 
+      <div class="row">
+        <div class="label">
+           <label id="number-label" for="phone">Age</label>
+        </div>
+        <div class="rightSide">
+        <input class="input-field" size="2" type="number" min="1" max="99" name="agr" id="number" placeholder="Age"required />
+      </div>
+      </div>  <div class="row">
+        <div class="label">
+           <label id="phone-label" for="phone">Phone number</label>
+        </div>
+        <div class="rightSide">
+        <input class="input-field" type="tel" name="phone" id="phone" placeholder="123-456-7890"required />
+      </div>
+      </div> 
+      <div class="subtitle">
+          <i class="material-icons">
+          computer
+        </i>
+         <h4>About your project<h4>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="date" for="date">Project Date: </label>
+        </div>
+        <div class="rightSide">
+        <input class="input-field" type="date" name="date" id="date" required/>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="label">
+        <label id="project-description" for="project-description">Project Description: </label>
+        </div>
+        <div class="rightSide">
+          <input class="input-field"type="text" name="project-description" placeholder="Information about project" multiline id="project-description" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="project-stage" for="project-stage">Project Stage: </label>
+        </div>
+      <div class="rightSide">
+          <select class="dropdown" id="dropdown" name="project-stage">
+            <option value disabled>Select an option</option>
+            <option value="strategy">Strategy Definition</option>
+            <option value="wireframe">Wireframe/Design</option> 
+            <option value="feasibility">Feasibility Study</option> 
+            <option value="prototyping">Prototyping</option> 
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="main-objective" for="main-objective">Main Objective: </label>
+        </div>
+        <div class="rightSide">
+          <select class="dropdown" id="dropdown" name="main-objective">
+            <option value disabled>Select an option</option>
+            <option value="traffic">Drive traffic/ Generate leads</option>
+            <option value="deals">Help close deal</option> 
+            <option value="customer">Improve customer           satisfaction</option> 
+            <option value="profitability">Increase profitability</option> 
+            <option value="website">Website Management</option>
+            <option value="systems">Integrate with other systems</option> 
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="budget" for="application-type">Estimated Budget: </label>
+        </div>
+        <div class="rightSide">
+          <ul style="list-style: none;">
+            <li class="checkbox">
+              <label>0 to 5 K
+                <input name="checkbox" value="1" type="checkbox" class="list">
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>6 to 10 K
+                <input name="radio-buttons" value="2" type="checkbox" class="list">
+              </label>
+            </li>
+             <li class="checkbox">
+              <label>11 to 20 K
+                <input name="checkbox" value="3" type="checkbox" class="list">
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>21 to 30 K
+                <input name="checkbox" value="4" type="checkbox" class="list">
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>More than 30 K
+                <input name="checkbox" value="4" type="checkbox" class="list">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="application-type" for="application-type">What kind of application are you looking for: </label>
+        </div>
+        <div class="rightSide">
+          <ul style="list-style: none;">
+            <li class="radio">
+              <label>Web Application
+                <input name="radio-buttons" value="1" type="radio" class="list">
+              </label>
+            </li>
+            <li class="radio">
+              <label>Mobile Application
+                <input name="radio-buttons" value="2" type="radio" class="list">
+              </label>
+            </li>
+             <li class="radio">
+              <label>Both
+                <input name="radio-buttons" value="3" type="radio" class="list">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="info" for="info">Additional information: </label>
+        </div>
+        <div class="rightSide">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Add a message here..."></textarea>
+        </div>
+      </div>
+      <div id="cta">
+       <button id="submit" type="submit">Submit</button>
+    </div>
+   </form>
+    </div>
+ </div>
+  
+  
+
+</body>
+
+</html>
