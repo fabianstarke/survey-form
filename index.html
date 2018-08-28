@@ -14,18 +14,24 @@
 
 <body>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  <!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<div id="main">
-  <div id="second">
-    <div id="button">
+<title>project survey form </title>
+</head>
+<body>
+<div class="main" id="main">
+  <div class="second">
+    <div class="close-button">
      <button class="btn-background">
        <i class="material-icons md{ color: rgba(0, 0, 0, 0.26); }">close
        </i>
      </button>
    </div>
-    <h1 id="title">Project survey form</h1>
+    <h1 class="title" id="title">Project survey form</h1>
    <p id="description">In order to be contacted, please provide some additionnal information including the best conveniant time to reach you.
    </p>
     <form id="survey-form">
@@ -33,7 +39,7 @@
           <i class="material-icons">
           account_circle
         </i>
-         <h4>Personal information<h4>
+         <h4>Personal information</h4>
       </div>
       <div class="row">
        <div class="label" >
@@ -45,7 +51,7 @@
       </div> 
       <div class="row">
         <div class="label">
-          <label id="first-name" for="first-name">First Name: </label>
+          <label id="firstname-label" for="first-name">First Name: </label>
         </div>
        <div class="rightSide">
         <input class="input-field" type="text" name="first-name" id="first-name" placeholder="First Name" required/>
@@ -53,10 +59,10 @@
       </div>
       <div class="row">
         <div class="label">
-          <label id="email-label" for="name">E-mail adress</label>
+          <label id="email-label" for="name">Email adress</label>
         </div>
         <div class="rightSide">
-        <input class="input-field" type="email" name="email" id="email" placeholder="Email Adress" required "Email Adress"/>
+        <input class="input-field" type="email" name="email" id="email" placeholder="Email Adress" required />
       </div>
       </div> 
       <div class="row">
@@ -64,25 +70,25 @@
            <label id="number-label" for="phone">Age</label>
         </div>
         <div class="rightSide">
-        <input class="input-field" size="2" type="number" min="1" max="99" name="agr" id="number" placeholder="Age"required />
+        <input class="input-field" size="2" type="number" min="1" max="99" name="agr" id="number" placeholder="Age" required />
       </div>
       </div>  <div class="row">
         <div class="label">
            <label id="phone-label" for="phone">Phone number</label>
         </div>
         <div class="rightSide">
-        <input class="input-field" type="tel" name="phone" id="phone" placeholder="123-456-7890"required />
+        <input class="input-field" type="tel" name="phone" id="phone" placeholder="123-456-7890" required />
       </div>
       </div> 
       <div class="subtitle">
           <i class="material-icons">
           computer
         </i>
-         <h4>About your project<h4>
+         <h4>About your project</h4>
       </div>
       <div class="row">
         <div class="label">
-          <label id="date" for="date">Project Date: </label>
+          <label id="date-label" for="date">Project Date: </label>
         </div>
         <div class="rightSide">
         <input class="input-field" type="date" name="date" id="date" required/>
@@ -90,18 +96,18 @@
       </div> 
       <div class="row">
         <div class="label">
-        <label id="project-description" for="project-description">Project Description: </label>
+        <label id="project-description-label" for="project-description">Project Description: </label>
         </div>
         <div class="rightSide">
-          <input class="input-field"type="text" name="project-description" placeholder="Information about project" multiline id="project-description" required/>
+          <input class="input-field" type="text" name="project-description" placeholder="Information about project" id="project-description" required/>
         </div>
       </div>
       <div class="row">
         <div class="label">
-          <label id="project-stage" for="project-stage">Project Stage: </label>
+          <label id="project-stage-label" for="project-stage">Project Stage: </label>
         </div>
       <div class="rightSide">
-          <select class="dropdown" id="dropdown" name="project-stage">
+          <select class="dropdown" id="project-stage" name="project-stage">
             <option value disabled>Select an option</option>
             <option value="strategy">Strategy Definition</option>
             <option value="wireframe">Wireframe/Design</option> 
@@ -112,10 +118,10 @@
       </div>
       <div class="row">
         <div class="label">
-          <label id="main-objective" for="main-objective">Main Objective: </label>
+          <label id="main-objective-label" for="main-objective">Main Objective: </label>
         </div>
         <div class="rightSide">
-          <select class="dropdown" id="dropdown" name="main-objective">
+          <select class="dropdown" id="main-objective" name="main-objective">
             <option value disabled>Select an option</option>
             <option value="traffic">Drive traffic/ Generate leads</option>
             <option value="deals">Help close deal</option> 
@@ -128,7 +134,7 @@
       </div>
       <div class="row">
         <div class="label">
-          <label id="budget" for="application-type">Estimated Budget: </label>
+          <label id="budget-label">Estimated Budget: </label>
         </div>
         <div class="rightSide">
           <ul style="list-style: none;">
@@ -162,7 +168,7 @@
       </div>
       <div class="row">
         <div class="label">
-          <label id="application-type" for="application-type">What kind of application are you looking for: </label>
+          <label id="application-type-label">What kind of application are you looking for: </label>
         </div>
         <div class="rightSide">
           <ul style="list-style: none;">
@@ -186,18 +192,20 @@
       </div>
       <div class="row">
         <div class="label">
-          <label id="info" for="info">Additional information: </label>
+          <label id="info-label">Additional information: </label>
         </div>
         <div class="rightSide">
           <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Add a message here..."></textarea>
         </div>
       </div>
-      <div id="cta">
-       <button id="submit" type="submit">Submit</button>
+      <div class="cta">
+       <button class="submit" type="submit">Submit</button>
     </div>
    </form>
     </div>
  </div>
+</body>
+</html>
   
   
 
